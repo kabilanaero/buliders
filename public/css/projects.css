@@ -1,0 +1,435 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: cursive;
+}
+
+
+.proj-banner {
+    background: linear-gradient(to right, black, transparent), url(image/banner-images2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    color: white;
+}
+
+.proj-banner h1 {
+    position: absolute;
+    top: calc(40%);
+    left: calc(40%);
+    font-size: 40px;
+}
+
+.proj-banner h4 {
+    position: absolute;
+    top: calc(55%);
+    left: calc(42%);
+}
+
+.project-container {
+    width: 90%;
+    margin: auto;
+}
+
+.project-img-row {
+    display: flex;
+    gap: 45px;
+    margin-top: 70px;
+}
+
+.project-img-col1 {
+    width: 40%;
+}
+
+.project-img-col2 {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.project-img-col2-row1 {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-img-col2-row2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-img-col1 img {
+    position: relative;
+}
+
+.project-img-hover {
+    position: relative;
+}
+
+.project-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fcc236;
+    opacity: 0;
+    /* Hide initially */
+    transition: opacity 0.3s ease;
+
+}
+
+.project-hover-border1 {
+    border: 1px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 88%;
+    height: 90%;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-hover-border {
+    border: 1px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-img-hover:hover .project-hover {
+    opacity: 0.9;
+    /* Display on hover */
+}
+
+
+.project-hover-border1 h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.project-hover-border1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.project-hover-border1 a:hover {
+    color: black;
+}
+
+.project-hover-border1 h5 {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.project-hover-border a {
+    text-decoration: none;
+    color: white;
+}
+
+.project-hover-border a:hover {
+    color: black;
+}
+
+.project-hover-border h5 {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+/* ------------------footer------------------- */
+.footer {
+    padding-top: 90px;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+}
+
+.footer-row {
+    display: flex;
+}
+
+.footer-col {
+    width: 70%;
+}
+
+.footer-col1 {
+    width: 30%;
+}
+
+.footer-image img {
+    max-width: 100%;
+}
+
+.footer-socailmedia h2 {
+    padding-bottom: 40px;
+}
+
+.footer-socailmedia ul {
+    display: flex;
+}
+
+.footer-socailmedia ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.contact {
+    background: linear-gradient(-45deg, rgba(36, 36, 35, 0.8), rgba(36, 36, 35, 0.8)) fixed, url(image/image5.jpg) fixed;
+    background-size: cover;
+}
+
+.contact-container {
+    width: 90%;
+    margin: auto;
+}
+
+.contact-row {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-col {
+    width: 33.3%;
+    margin: 90px 0px;
+}
+
+.contact-address {
+    display: flex;
+    gap: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+.address-icon {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.address-icon i {
+    font-size: 30px;
+    padding: 7px;
+}
+
+.address-icon:hover {
+    background-color: #fcc236;
+}
+
+.address-con a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* -----------------------------response------------------------------- */
+
+@media (min-width:320px) {
+    .project-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .project-img-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project-img-col1 {
+        width: 100%;
+    }
+
+    .project-img-col2 {
+        width: 100%;
+    }
+
+    .project-img-col2-row1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project-img-col2-row2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project-img-hover img {
+        width: 100%;
+    }
+
+    .proj-banner h1 {
+        font-size: 25px;
+    }
+
+    .proj-banner h4 {
+        font-size: 15px;
+    }
+
+    .contact-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-col {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .contact-address {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:760px) {
+    .project-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .project-img-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project-img-col1 {
+        width: 100%;
+    }
+
+    .project-img-col2 {
+        width: 100%;
+    }
+
+    .project-img-col2-row1 {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+
+    .project-img-col2-row2 {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+
+    .project-img-hover img {
+        max-width: 100%;
+    }
+
+    .project-img-hover img {
+        width: 100%;
+    }
+
+    .contact-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-row {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .contact-col {
+        width: 500%;
+        margin: 40px 0px;
+    }
+
+    .contact-address {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1020px) {
+    .project-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .project-img-row {
+        display: flex;
+        gap: 35px;
+        flex-wrap: nowrap;
+    }
+
+    .project-img-col1 {
+        width: 40%;
+    }
+
+    .project-img-col2 {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .project-img-col2-row1 {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .project-img-col2-row2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .project-img-hover img {
+        width: 100%;
+    }
+
+    .proj-banner h1 {
+        font-size: 35px;
+    }
+
+    .proj-banner h4 {
+        font-size: 15px;
+    }
+
+    .contact-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-row {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .contact-col {
+        width: 50%;
+        margin: 90px 0px;
+    }
+
+    .contact-address {
+        font-size: 25px;
+    }
+
+
+}

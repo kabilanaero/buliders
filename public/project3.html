@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="icon" href="images/nagercoil-logo1.png">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        .proj1-banner {
+            background-image: url(css/image/proj1.banner.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            position: relative;
+            color: #fcc236;
+        }
+
+        .proj1-banner h1 {
+            position: absolute;
+            top: calc(20%);
+            left: calc(10%);
+            font-size: 40px;
+        }
+
+        .proj1-banner h4 {
+            position: absolute;
+            top: calc(40%);
+            left: calc(10%);
+            font-size: 20px;
+        }
+
+        .proj1-banner h4 a {
+            text-decoration: none;
+            color: #fcc236;
+        }
+
+        .proj1-container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .proj1-row {
+            display: flex;
+            margin-top: 40px;
+            gap: 10%;
+        }
+
+        .proj1-col {
+            width: 50%;
+        }
+
+        .proj1-col2 {
+            width: 50%;
+        }
+
+        .proj1-col2 h2 {
+            font-size: 35px;
+        }
+
+        .proj1-col2 ul {
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+        .proj1-col2 li {
+            font-size: 20px;
+            margin-top: 15px;
+            margin-left: 20px;
+            list-style-type: square;
+        }
+
+        /* .line-proj1 span{
+    position: relative;
+}
+
+.line-proj1 span::after{
+    position: absolute;
+    content: "|";
+    height: 500px;
+    top: 50px;
+    left: 650px;
+    background-color: rgb(218, 204, 14);
+} */
+
+
+
+
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+
+        .timeline {
+            position: relative;
+            margin: 50px auto;
+            padding: 40px 0;
+            width: 1000px;
+            box-sizing: border-box;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 1600px;
+            background: #c5c5c5;
+        }
+
+        .timeline ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .timeline ul li {
+            list-style: none;
+            position: relative;
+            width: 50%;
+            padding: 20px 40px;
+            box-sizing: border-box;
+        }
+
+        .timeline ul li:nth-child(odd) {
+            float: left;
+            text-align: right;
+            clear: both;
+        }
+
+        .timeline ul li:nth-child(even) {
+            float: right;
+            text-align: left;
+            clear: both;
+        }
+
+        .content {
+            padding-bottom: 20px;
+        }
+
+        .timeline ul li:nth-child(odd):before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            top: 24px;
+            right: -6px;
+            background: #fcc236;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+        }
+
+        .timeline ul li:nth-child(even):before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            top: 24px;
+            left: -4px;
+            /* background:rgba(233,33,99,1); */
+            background: #fcc236;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+        }
+
+        .timeline ul li h3 {
+            padding: 0;
+            margin: 0;
+            /* color:rgba(233,33,99,1); */
+            color: #fcc236;
+            font-weight: 600;
+        }
+
+        .timeline ul li p {
+            margin: 10px 0 0;
+            padding: 0;
+        }
+
+        .timeline ul li .time h4 {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        .timeline ul li:nth-child(odd) .time {
+            position: absolute;
+            top: 12px;
+            right: -165px;
+            margin: 0;
+            padding: 8px 16px;
+            /* background:rgba(233,33,99,1); */
+            background-color: #fcc236;
+            color: #fff;
+            border-radius: 18px;
+            /* box-shadow:0 0 0 3px rgba(233,33,99,0.3); */
+            box-shadow: 0 0 0 3px rgb(235, 205, 140);
+        }
+
+        .timeline ul li:nth-child(even) .time {
+            position: absolute;
+            top: 12px;
+            left: -165px;
+            margin: 0;
+            padding: 8px 16px;
+            /* background:rgba(233,33,99,1); */
+            background-color: #fcc236;
+            color: #fff;
+            border-radius: 18px;
+            box-shadow: 0 0 0 3px rgb(235, 205, 140);
+        }
+
+        .steps {
+            display: flex;
+            gap: 5%;
+        }
+
+        .steps img {
+            margin-top: 5%;
+        }
+
+        @media(max-width:1000px) {
+            .timeline {
+                width: 100%;
+            }
+        }
+
+        @media(max-width:767px) {
+            .timeline {
+                width: 100%;
+                padding-bottom: 0;
+            }
+
+            h1 {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            .timeline:before {
+                left: 20px;
+                height: 100%;
+            }
+
+            .timeline ul li:nth-child(odd),
+            .timeline ul li:nth-child(even) {
+                width: 100%;
+                text-align: left;
+                padding-left: 50px;
+                padding-bottom: 50px;
+            }
+
+            .timeline ul li:nth-child(odd):before,
+            .timeline ul li:nth-child(even):before {
+                top: -18px;
+                left: 16px;
+            }
+
+            .timeline ul li:nth-child(odd) .time,
+            .timeline ul li:nth-child(even) .time {
+                top: -30px;
+                left: 50px;
+                right: inherit;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="proj-1">
+        <div class="proj1-banner">
+            <!-- <h1>PROJECTS</h1> -->
+            <h1>THE BEST BUILDING <span style="color: rgb(74, 74, 238);">PLANNING COMPANY!</span></h1>
+            <h4><span><a href="index.html">HOME</a></span> - PROJECTS</h4>
+        </div>
+        <div class="proj1-container">
+            <div class="proj1-row">
+                <div class="proj1-col">
+                    <div class="image-proj1">
+                        <img src="images/project-3.jpg" alt="" srcset="" width="600px" height="300px">
+                    </div>
+                </div>
+                <div class="proj1-col2">
+                    <h2> NAGERCOIL BUILDERS</h2>
+                    <ul> Project Construction of this Site.
+                        <li style="color: rgba(219, 95, 12, 0.938);">Planning and Design</li>
+                        <li>Site Preparation</li>
+                        <li style="color: rgba(219, 95, 12, 0.938);">Foundation Work</li>
+                        <li>Structural Framework</li>
+                        <li style="color: rgba(219, 95, 12, 0.938);">Finishing Touches</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="line-proj1">
+                <span></span>
+            </div> -->
+
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="content">
+                            <h3>Design</h3>
+                            <div class="steps">
+                                <img src="images/step1.jpg" alt="" width="100px" height="100px">
+                                <p> This Stage includes Conceptualizing, Developing, and Refining Drawings and Models to
+                                    Translate Project Ideas into Executable Blueprints.</p>
+
+                            </div>
+                        </div>
+                        <div class="time">
+                            <h4>STEP 1 </h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="content">
+                            <h3>Duration</h3>
+                            <div class="steps">
+                                <p> Accurate scheduling and management of resources are crucial to ensuring projects are
+                                    completed within the specified duration, meeting timelines and budget constraints.
+                                </p>
+                                <img src="images/step2.jpg" alt="" width="100px" height="100px">
+                            </div>
+                        </div>
+                        <div class="time">
+                            <h4>STEP 2</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="content">
+                            <h3>Pre-Construction</h3>
+                            <div class="steps">
+                                <img src="images/step3.jpg" alt="" width="100px" height="100px">
+                                <p> This Phase ensures
+                                    that
+                                    all Logistical, Financial, and Regulatory Aspects are Addressed before Actual
+                                    Construction Begins. </p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <h4>STEP 3</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="content">
+                            <h3>Procurement</h3>
+                            <div class="steps">
+                                <p> This Phase ensures Timely Acquisition and
+                                    Delivery,
+                                    Maintaining Project Schedules and Budget Constraints.</p>
+                                <img src="images/step4.jpg" alt="" width="100px" height="100px">
+                            </div>
+                        </div>
+                        <div class="time">
+                            <h4>STEP 4</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="content">
+                            <h3>Construction and Building</h3>
+                            <div class="steps">
+                                <img src="images/step5.jpg" alt="" width="100px" height="100px">
+                                <p> It involves
+                                    Coordinating various Trades and Contractors to Transform Design Plans into a
+                                    Completed
+                                    Structure, Safety Regulations.</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <h4>STEP 5</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="content">
+                            <h3>Commissioning</h3>
+                            <div class="steps">
+                                <p> This Phase involves
+                                    Verifying and Documenting that the Building and its Systems Operate Efficiently and
+                                    Effectively over to the Owner. </p>
+                                <img src="images/step6.jpg" alt="" width="100px" height="100px">
+                            </div>
+                        </div>
+                        <div class="time">
+                            <h4>STEP 6</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="content">
+                            <h3>Owner Occupancy</h3>
+                            <div class="steps">
+                                <img src="images/step8.jpg" alt="" width="100px" height="100px">
+                                <p> This includes Final
+                                    Inspections,
+                                    Addressing any Remaining Issues, and Providing the Owner with Necessary
+                                    Documentation.</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <h4>STEP 7</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="content">
+                            <h3>Project CloseOut</h3>
+                            <div class="steps">
+                                <p> This includes
+                                    Final Inspections, handing over as-Built Drawings, and Ensuring a Smooth Transition
+                                    to the Building’s Operational Phase.
+                                </p>
+                                <img src="images/step7.jpg" alt="" width="100px" height="100px">
+                            </div>
+                        </div>
+                        <div class="time">
+                            <h4>STEP 8</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
